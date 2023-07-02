@@ -38,7 +38,7 @@ COPY config/php.ini /etc/php81/conf.d/custom.ini
 COPY config/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
 # Download 
-ARG DIRECTORYLISTER_VERSION=3.12.0
+ARG DIRECTORYLISTER_VERSION=3.12.3
 ADD https://github.com/DirectoryLister/DirectoryLister/releases/download/$DIRECTORYLISTER_VERSION/DirectoryLister-$DIRECTORYLISTER_VERSION.tar.gz /tmp/DirectoryLister.tar.gz
 
 RUN tar -xf /tmp/DirectoryLister.tar.gz -C /var/www/html/
